@@ -23,4 +23,7 @@ public class Box implements Shape{
     public double getVolume() {
         return volume;
     }
+    public ArrayList<Shape> getShapes() {
+        return shapes;
+    }
 }

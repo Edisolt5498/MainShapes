@@ -1,5 +1,5 @@
 interface Shape extends Comparable<Shape> {
-    public double getVolume();
+    double getVolume();
 
     @Override
     default int compareTo(Shape o) {
