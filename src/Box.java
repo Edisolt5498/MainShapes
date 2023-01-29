@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 
-public class Box extends Shape{
+public class Box implements Shape{
     ArrayList<Shape> shapes = new ArrayList<>();
     private double available;
+    private double volume;
 
-    public Box (double available) {
-        super(available);
-        this.available = available;
+    public Box (double volume) {
+        this.volume = volume;
+        available = volume;
     }
 
     public boolean add (Shape shape) {
@@ -16,5 +17,10 @@ public class Box extends Shape{
             return true;
         }
         return false;
+    }
+
+    @Override
+    public double getVolume() {
+        return volume;
     }
 }

@@ -1,16 +1,15 @@
-public class Pyramid extends Shape {
+public class Pyramid implements Shape {
     private final double height;
     private final double s;
 
     public Pyramid(double height, double s) {
-        super(height * s * 4 / 3);
         this.height = height;
         this.s = s;
     }
 
     @Override
     public double getVolume() {
-        return super.getVolume();
+        return (height * s * 4 / 3);
     }
 
     public double getHeight() {
